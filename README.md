@@ -1,22 +1,22 @@
-Semantic Chunking & Embedding Tool
-This Python tool processes text documents and splits them into semantically meaningful chunks using three strategies: fixed-size with overlap, sentence-based, and paragraph-based.
+# Semantic Chunking & Embedding Tool
 
-Each chunk is embedded using a modern sentence embedding model (all-MiniLM-L6-v2), stored in a local FAISS vector index, and used for semantic search based on cosine similarity.
+This Python tool processes text documents and splits them into semantically meaningful chunks using three strategies:
+- Fixed-size with overlap
+- Sentence-based
+- Paragraph-based
 
-Features
-Supports .txt, .pdf, and .docx files
+Each chunk is embedded using a modern sentence embedding model (`all-MiniLM-L6-v2`), stored in a local FAISS vector index, and used for semantic search based on cosine similarity.
 
-Implements multiple chunking strategies
+## Features:
 
-Performs semantic search across all chunks
+- **Supports** `.txt`, `.pdf`, and `.docx` files  
+- **Implements** multiple chunking strategies  
+- **Performs** semantic search across all chunks  
+- **Automatically selects** the most relevant strategy  
+- **Stores** embeddings using FAISS for fast retrieval  
+- **Saves** matching text chunks for reuse  
 
-Automatically selects the most relevant strategy
+## Output Files:
 
-Stores embeddings using FAISS for fast retrieval
-
-Saves matching text chunks for reuse
-
-Output
-semantic_index.faiss – vector database of embeddings
-
-semantic_chunks.pkl – corresponding text segments
+- `semantic_index.faiss` – vector database of embeddings  
+- `semantic_chunks.pkl` – corresponding text segments  
