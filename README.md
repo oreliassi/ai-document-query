@@ -7,7 +7,7 @@ This Python tool processes text documents and splits them into semantically mean
 
 Each chunk is embedded using a modern sentence embedding model (`all-MiniLM-L6-v2`), stored in a local FAISS vector index, and used for semantic search based on cosine similarity.
 
-## Features:
+## Features
 
 - **Supports** `.txt`, `.pdf`, and `.docx` files  
 - **Implements** multiple chunking strategies  
@@ -16,7 +16,11 @@ Each chunk is embedded using a modern sentence embedding model (`all-MiniLM-L6-v
 - **Stores** embeddings using FAISS for fast retrieval  
 - **Saves** matching text chunks for reuse  
 
-## Output Files:
+## Output Files
 
 - `semantic_index.faiss` – vector database of embeddings  
 - `semantic_chunks.pkl` – corresponding text segments  
+
+## Included Sample Files
+
+This repository contains **3 sample text documents** for testing the model: `Ai.txt`, `what_is_machine_learning.docx` and `climate_change.pdf`
